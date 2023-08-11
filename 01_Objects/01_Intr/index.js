@@ -28,12 +28,46 @@
 
 // task2
 
-let obj = {};
+// let obj = {};
 
-function isEmpty(obj) {
+// function isEmpty(obj) {
+//   for (let key in obj) {
+//     return false;
+//   }
+//   return true;
+// }
+// let user = { name: "peter" };
+
+// console.log(isEmpty(user))
+
+//Task 3
+
+// let salaries = {
+//   John: 100,
+//   Ann: 160,
+//   Pete: 130,
+// };
+// let sum = 0;
+// for (let key in salaries) {
+//   sum += salaries[key];
+// }
+// console.log(sum);
+
+//task 4
+
+// before the call
+let menu = {
+  width: 200,
+  height: 300,
+  title: "My menu",
+};
+
+function Multiply2(obj) {
   for (let key in obj) {
-    return false;
+    if (typeof obj[key] == Number) {
+      obj[key] = obj[key] * 2;
+    }
   }
-  return true;
 }
-let user = { name: "peter" };
+Multiply2(menu);
+console.log(menu);
